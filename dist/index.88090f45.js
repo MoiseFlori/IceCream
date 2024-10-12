@@ -642,6 +642,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["55MtB","2DotB"], "2DotB", "parcelRequire7f7e")
+},{}]},["55MtB","2DotB"], "2DotB", "parcelRequire9685")
 
 //# sourceMappingURL=index.88090f45.js.map
