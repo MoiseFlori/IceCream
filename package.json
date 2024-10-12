@@ -2,7 +2,7 @@
   "name": "icecream",
   "version": "1.0.0",
   "description": "",
- "homepage": "https://moiseflori.github.io/IceCream2/"
+ "homepage": "https://MoiseFlori.github.io/IceCream2/"
 ,
   "scripts": {
 
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moiseflori/IceCream2.git"
+    "url": "git+https://github.com/MoiseFlori/IceCream2.git"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
