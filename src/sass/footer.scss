@@ -1,0 +1,225 @@
+.footer-container {
+  min-width: 320px;
+  background: rgba(255, 245, 246, 1);
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  display: flex;
+  align-items: flex-start;
+  width: 234px;
+  height: 134px;
+  padding-bottom: 40px;
+}
+
+.footer-slogan {
+  width: 232px;
+  height: 42px;
+  font-family: 'Titan One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.61px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(255, 165, 186, 1);
+}
+
+.footer-slogan span {
+  padding-top: 16px;
+  display: inline-block;
+  width: 200px;
+  height: 76px;
+  font-family: 'Titan One';
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38.93px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(212, 20, 67, 1);
+}
+.animated-text {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: text-shadow 0.5s ease;
+}
+
+.animated-text:hover {
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 28.24px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 19.53px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.social-icon:hover {
+  fill: rgba(212, 20, 67, 1);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  fill: #ffa5ba;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22.32px;
+  text-align: right;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 40px;
+}
+
+.footer-phone-number {
+  margin-left: 6px;
+  color: rgba(212, 20, 67, 1);
+}
+
+.footer-phone-number:hover {
+  transform: scale(0.99);
+  z-index: 2;
+  box-shadow: 0 5px 5px rgba(186, 185, 185, 0.2);
+}
+.footer-copyright-info {
+  padding-top: 16px;
+  border-top: 1px solid rgba(225, 225, 225, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-text:hover {
+  transform: scale(1.1);
+}
+.copyright-text {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21.28px;
+  text-align: center;
+  color: rgba(144, 126, 130, 1);
+  padding-bottom: 4px;
+  transition: transform 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    min-width: 768px;
+    padding-left: 16px;
+  }
+
+  .footer-title {
+    width: 340px;
+    height: 179px;
+  }
+
+  .footer-slogan {
+    width: 340px;
+    height: 57px;
+    font-size: 26px;
+    line-height: 29.77px;
+  }
+
+  .footer-slogan span {
+    width: 340px;
+    height: 110px;
+    font-size: 48px;
+    line-height: 54.96px;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .footer-social-links {
+    gap: 30px;
+    padding-right: 20px;
+    padding-top: 60px;
+  }
+
+  .social-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer-contact-info {
+    font-size: 14px;
+    line-height: 26.04px;
+    padding-bottom: 59px;
+  }
+
+  .footer-copyright-info {
+    padding-top: 8px;
+  }
+
+  .copyright-text {
+    line-height: 26.04px;
+  }
+  .break-line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    min-width: 1158px;
+    padding-top: 120px;
+  }
+
+  .footer-title {
+    width: 474px;
+    height: 116px;
+    padding-bottom: 60px;
+  }
+
+  .footer-slogan {
+    width: 472px;
+    height: 34px;
+    font-size: 30px;
+    line-height: 34.35px;
+  }
+
+  .footer-slogan span {
+    width: 500px;
+    height: 66px;
+    font-size: 58px;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+  }
+
+  .footer-social-links {
+    padding-right: 16px;
+    padding-top: 12px;
+  }
+
+  .footer-contact-info {
+    font-size: 16px;
+    line-height: 29.76px;
+    padding-bottom: 60px;
+  }
+
+  .footer-copyright-info {
+    padding-top: 7px;
+  }
+}

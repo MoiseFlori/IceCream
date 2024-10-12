@@ -1,0 +1,24 @@
+{
+  "name": "icecream",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://moiseflori.github.io/IceCream/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /IceCream/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moiseflori/IceCream.git"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

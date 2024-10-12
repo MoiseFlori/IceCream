@@ -1,0 +1,329 @@
+.contacts-section {
+  min-width: 320px;
+  background: linear-gradient(to bottom, white 15%, #fff5f6 35%);
+  background-size: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.location-card {
+  width: 280px;
+  height: auto;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 30px 0px rgba(11, 11, 0, 0.1);
+}
+
+.location-card:hover {
+  transform: scale(1.1);
+  transition: all 0.25s linear;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  width: 216px;
+  height: auto;
+  padding: 40px 32px;
+}
+
+.category-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 16px;
+  border-radius: 4px;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22.32px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+
+.foodtruck {
+  width: 130px;
+  background-color: rgba(194, 226, 151, 1);
+}
+
+.cafe {
+  background-color: rgba(240, 209, 165, 1);
+}
+
+.location-details,
+.business-hours,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.location-details {
+  height: 66px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.city-name,
+.location-description,
+.phone-number,
+.email-address,
+.weekdays,
+.weekends,
+.opening-hours {
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.city-name {
+  padding-bottom: 8px;
+}
+
+.location-description {
+  height: 36px;
+  line-height: 18px;
+  color: rgba(144, 126, 130, 1);
+}
+.cafe-description {
+  width: 208px;
+}
+.foodtruck-description {
+  width: 216px;
+}
+.cafe-two-description {
+  width: 204px;
+}
+.business-hours {
+  gap: 8px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.weekdays-container,
+.weekends-container {
+  width: 100%;
+}
+
+.opening-hours {
+  color: rgba(255, 165, 186, 1);
+}
+
+.contact-info {
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+.phone-number,
+.email-address {
+  color: rgba(144, 126, 130, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-number:hover,
+.email-address:hover {
+  color: rgba(212, 20, 67, 1);
+}
+
+.contacts-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 32px;
+}
+.locations-button,
+.franchise-button {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: center;
+  border-radius: 22px;
+  width: 161px;
+  height: 44px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(212, 20, 67, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.locations-button:hover,
+.franchise-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(212, 20, 67, 1);
+}
+@media screen and (min-width: 768px) {
+  .contacts-section {
+    min-width: 768px;
+  }
+
+  .cards-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .location-card {
+    width: 224px;
+  }
+
+  .content-card {
+    width: 160px;
+  }
+
+  .category-location {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 29.76px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
+  }
+
+  .foodtruck {
+    width: 138px;
+  }
+
+  .location-details {
+    height: 103px;
+    padding-bottom: 32px;
+  }
+
+  .city-name,
+  .location-description,
+  .phone-number,
+  .email-address,
+  .weekdays,
+  .weekends,
+  .opening-hours {
+    font-size: 14px;
+  }
+
+  .city-name {
+    padding-bottom: 12px;
+  }
+
+  .location-description {
+    height: 65px;
+    line-height: 23.24px;
+  }
+  .cafe-description {
+    width: 159px;
+  }
+  .foodtruck-description {
+    width: 158px;
+  }
+  .cafe-two-description {
+    width: 176px;
+  }
+
+  .business-hours {
+    gap: 12px;
+    padding: 32px 0;
+  }
+
+  .contact-info {
+    padding-top: 32px;
+  }
+
+  .contacts-button {
+    flex-direction: row;
+    gap: 14.5px;
+    padding-top: 60px;
+  }
+
+  .locations-button {
+    width: 191.45px;
+  }
+
+  .franchise-button {
+    width: 174.05px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .contacts-section {
+    min-width: 1158px;
+  }
+
+  .location-card {
+    width: 368px;
+  }
+
+  .content-card {
+    width: 288px;
+  }
+
+  .category-location {
+    width: 75.1px;
+  }
+  .foodtruck {
+    width: 138px;
+  }
+
+  .location-details {
+    height: 88px;
+  }
+
+  .city-name,
+  .location-description,
+  .phone-number,
+  .email-address,
+  .weekdays,
+  .weekends,
+  .opening-hours {
+    font-size: 16px;
+  }
+
+  .city-name {
+    padding-bottom: 8px;
+  }
+
+  .location-description {
+    height: 50px;
+    line-height: 29.28px;
+  }
+  .cafe-description {
+    width: 288px;
+  }
+  .foodtruck-description {
+    width: 243px;
+  }
+  .cafe-two-description {
+    width: 276px;
+  }
+
+  .contacts-button {
+    gap: 12px;
+  }
+
+  .locations-button {
+    width: 198px;
+  }
+
+  .franchise-button {
+    width: 168px;
+  }
+}

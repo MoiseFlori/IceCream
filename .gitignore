@@ -1,0 +1,12 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build directory
+dist/
+
+# Ignore cache files
+.cache/
+
+# Optional: Ignore system-specific files
+.DS_Store
+Thumbs.db

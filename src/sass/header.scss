@@ -1,0 +1,451 @@
+/* Container General */
+
+.main-container {
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  position: relative;
+  padding-left: 20px;
+  height: 502px;
+  background-color: rgba(255, 184, 202, 1);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Container Stânga */
+.left-container {
+  position: absolute;
+  top: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.logo-svg {
+  width: 199px;
+  height: 50px;
+}
+
+.logo-container {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.logo-container:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.5));
+  transform: scale(1.1);
+}
+
+.hero-title {
+  padding-top: 136px;
+  width: 218px;
+  height: 106px;
+  font-family: 'Titan One', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29.77px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.highlight {
+  font-family: 'Titan One', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 46.32px;
+  color: rgba(212, 20, 67, 1);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: text-shadow 0.5s ease, transform 0.5s ease;
+}
+.highlight:hover {
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.buttons-container {
+  display: flex;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.products-button,
+.how-made-button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10.42px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: rgba(212, 20, 67, 1);
+  transition: background-color 250ms ease-in-out;
+}
+
+.products-button:hover,
+.how-made-button:hover {
+  background-color: #d41443;
+  color: #fff;
+}
+
+.paragraph-icon-container,
+.milk-bottle,
+.description-paragraph {
+  display: none;
+}
+
+/* Container Centru */
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktop-navbar {
+  display: none;
+}
+.ice-cream-image {
+  position: absolute;
+  right: 32px;
+  top: 100px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+
+  > svg {
+    position: absolute;
+    inset: -9px auto auto -81px;
+    min-width: 346px;
+    height: 344px;
+  }
+
+  > img {
+    position: relative;
+    width: 171px;
+    height: auto;
+  }
+}
+.ice-cream-image:hover {
+  transform: scale(1.1);
+}
+
+/* Container Dreapta */
+.right-container {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.header-right-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-burger-menu {
+  width: 20px;
+  height: 12px;
+  border: 1px;
+}
+
+.buy-now-container {
+  display: none;
+}
+
+.stats-container,
+.person-container {
+  display: none;
+}
+
+/* Media Query pentru Tablete și Dispozitive Mai Mari */
+@media screen and (min-width: 768px) {
+  .main-container {
+    min-width: 768px;
+    height: 416px;
+    padding-left: 32px;
+  }
+  // left-container
+  .left-container {
+    top: 32px;
+  }
+  .hero-title {
+    padding-top: 20px;
+    font-size: 2rem;
+    line-height: 25.19px;
+    min-width: 162px;
+    height: 80px;
+  }
+
+  .highlight {
+    font-size: 34px;
+    line-height: 30.77px;
+    display: block;
+  }
+
+  .paragraph-icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .milk-bottle {
+    padding-top: 10px;
+    display: block;
+    width: 152px;
+    height: 154px;
+  }
+  .description-and-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .description-paragraph {
+    width: 120px;
+    height: 48px;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .arrow-right-button {
+    font-family: 'DM Sans', sans-serif;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    color: rgba(212, 20, 67, 1);
+    background-color: #fff;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .arrow-right-button:hover {
+    background-color: rgba(236, 235, 235, 1);
+  }
+  //  center-container
+  .ice-cream-image {
+    > svg {
+      inset: -37px auto auto -74px;
+      width: 335px;
+      height: 333px;
+    }
+    > img {
+      width: 143px;
+    }
+    right: 303px;
+    height: 336px;
+    top: 78px;
+  }
+
+  // right-container
+  .right-container {
+    top: 32px;
+    right: 32px;
+  }
+
+  .buy-now-container {
+    display: flex;
+  }
+
+  .buy-now-button {
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(212, 20, 67, 1);
+    transition: background-color 250ms ease-in-out;
+    width: 160px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease-in-out;
+    margin-left: 32px;
+  }
+  .buy-now-button:hover {
+    color: #fff;
+    background-color: rgba(212, 20, 67, 1);
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    transition: filter 0.5s ease, transform 0.5s ease;
+  }
+  .stat:hover {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.5));
+    transform: scale(1.1);
+  }
+
+  .cafes-number {
+    width: 43px;
+    height: 44px;
+  }
+
+  .food-truck-number {
+    width: 51px;
+    height: 43px;
+  }
+
+  .person-container {
+    display: flex;
+  }
+
+  .person-image {
+    margin-top: 70px;
+    min-width: 190px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .main-container {
+    min-width: 1280px;
+    height: 664px;
+  }
+  // left-container
+  .hero-title {
+    padding-top: 60px;
+    line-height: 43.51px;
+    min-width: 277px;
+    height: 137px;
+  }
+
+  .highlight {
+    font-size: 58px;
+    line-height: 52.49px;
+  }
+
+  .buttons-container {
+    gap: 14px;
+    padding-top: 24px;
+  }
+
+  .products-button,
+  .how-made-button {
+    font-size: 16px;
+    line-height: 18.23px;
+    padding: 11px 22.63px 11px 23.66px;
+  }
+
+  .milk-bottle {
+    padding-top: 40px;
+    width: 213px;
+    height: 216px;
+  }
+
+  .description-and-button-container {
+    gap: 20px;
+  }
+  .description-paragraph {
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .arrow-right {
+    margin-top: 4%;
+  }
+
+  //  center-container
+  .desktop-navbar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    min-width: 541px;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 35px;
+    z-index: 3;
+  }
+
+  .desktop-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.83px;
+    text-align: left;
+    transition: color 250ms ease-in-out, transform 0.5s ease;
+  }
+  .desktop-navbar a:hover {
+    color: rgba(212, 20, 67, 1);
+    transform: scale(1.1);
+  }
+
+  .ice-cream-image {
+    > svg {
+      inset: -54px auto auto -119px;
+      width: 534px;
+      height: 534px;
+    }
+    > img {
+      width: 236px;
+      height: 557px;
+    }
+    top: 107px;
+    right: 368px;
+    z-index: 1;
+  }
+
+  // right-container
+  .right-container {
+    top: 40px;
+    right: 36px;
+  }
+
+  .icon-burger-menu {
+    display: none;
+  }
+
+  .stat {
+    padding-top: 68px;
+    gap: 15px;
+  }
+
+  .cafes-number {
+    min-width: 72px;
+    height: 77px;
+  }
+
+  .food-truck-number {
+    min-width: 92px;
+    height: 76px;
+  }
+
+  .person-image {
+    margin-top: 103px;
+    width: 304px;
+    height: 241px;
+  }
+}
