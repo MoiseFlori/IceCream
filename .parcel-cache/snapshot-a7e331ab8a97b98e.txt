@@ -118,7 +118,7 @@
 94C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\src\images\testimonials\testimonials-7-d-1x.jpg133733820580793488 0
 82C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\semver\functions\eq.js133733838898050018 0
 144C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\filters.d.ts.map133733838899213875 0
-59C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\package.json133733831514429900 0
+59C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\package.json133733870655602162 0
 83C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\picocolors\package.json133733838893601591 0
 92C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\svgo\plugins\sortDefsChildren.js133733838907483328 0
 98C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\css-select\node_modules\domhandler\lib133733838898892262 1

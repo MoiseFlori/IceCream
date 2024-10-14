@@ -1,2 +1,0 @@
-(()=>{let e={openPopupBtn:document.querySelector("[data-popup-open]"),closePopupBtn:document.querySelector("[data-popup-close]"),closePopupLink:document.querySelector(".popup-nav"),popup:document.querySelector("[data-popup]")};function p(){e.popup.classList.toggle("is-hidden")}e.openPopupBtn?.addEventListener("click",p),e.closePopupBtn.addEventListener("click",p),e.closePopupLink.addEventListener("click",p)})();
-//# sourceMappingURL=index.922d769a.js.map
