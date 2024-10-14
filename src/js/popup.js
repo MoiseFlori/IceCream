@@ -13,5 +13,8 @@
 
   function togglePopup() {
     refs.popup.classList.toggle('is-hidden'); // Adaugă sau elimină clasa pentru a ascunde/arăta pop-up-ul
+    
+    // Adăugăm sau eliminăm clasa 'no-scroll' pe body pentru a dezactiva/reactiva scroll-ul
+    document.body.classList.toggle('no-scroll');
   }
 })();

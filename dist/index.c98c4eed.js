@@ -1,0 +1,2 @@
+(()=>{let e={openPopupBtn:document.querySelector("[data-popup-open]"),closePopupBtn:document.querySelector("[data-popup-close]"),closePopupLink:document.querySelector(".popup-nav"),popup:document.querySelector("[data-popup]")};function o(){e.popup.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}e.openPopupBtn?.addEventListener("click",o),e.closePopupBtn.addEventListener("click",o),e.closePopupLink.addEventListener("click",o)})();
+//# sourceMappingURL=index.c98c4eed.js.map
