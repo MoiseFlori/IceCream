@@ -126,19 +126,22 @@
 .about-stats-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   text-align: left;
   gap: 32px;
+  width: 100%;
 }
+
 .about-stat-item {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
   gap: 16px;
+  padding-left: 20px;
 }
 .about-stat-item:hover {
   transform: translateY(10px);
 }
-
 
 .stat-number {
   width: 98px;
