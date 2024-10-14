@@ -2,10 +2,8 @@
   "name": "icecream2",
   "version": "1.0.0",
   "description": "",
- "homepage": "https://moiseflori.github.io/IceCream2/"
-,
+  "homepage": "https://moiseflori.github.io/IceCream2/",
   "scripts": {
-
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /IceCream2/",
     "predeploy": "npm run build",
