@@ -107,13 +107,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Ignore node_modules directory
-node_modules/
-
-# Ignore cache files
-.cache/
-
-# Optional: Ignore system-specific files
-.DS_Store
-Thumbs.db
