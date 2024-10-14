@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Titan+One&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="/index.b07a87f3.css">
-    <script src="/index.975ef6c8.js" defer=""></script>
+    <script src="/index.88090f45.js" defer=""></script>
   </head>
   <body>
     <header class="main-container container">
@@ -71,7 +71,7 @@
   <div class="right-container">
     <div class="header-right-container">
       <div class="burger-container">
-        <svg class="icon-burger-menu">
+        <svg class="icon-burger-menu" data-popup-open="">
           <use href="/icons.adfc4680.svg#icon-burger-menu"></use>
         </svg>
       </div>
@@ -1007,66 +1007,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var _carouselJs = require("./js/carousel.js");
 (0, _carouselJs.rotateReviewsListSection)();
 
-},{"./js/carousel.js":"2DotB"}],"2DotB":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "rotateReviewsListSection", ()=>rotateReviewsListSection);
-function rotateReviewsListSection() {
-    function rotateReviews() {
-        const reviewsList = document.querySelector(".profile-picture-list");
-        if (!reviewsList || !reviewsList.firstElementChild) return; // Verificăm dacă există lista și primul copil
-        const firstItem = reviewsList.firstElementChild;
-        reviewsList.appendChild(firstItem); // Mutăm primul element la finalul listei
-    }
-    // Stocăm ordinea inițială a recenziilor
-    const initialReviewsOrder = Array.from(document.querySelectorAll(".profile-picture-list li"));
-    // Rotește recenziile la fiecare 5 secunde, indiferent de lățimea ferestrei
-    setInterval(function() {
-        rotateReviews();
-    }, 5000);
-    // Restaurăm ordinea inițială când se redimensionează fereastra
-    window.addEventListener("resize", function() {
-        const reviewsList = document.querySelector(".profile-picture-list");
-        if (!reviewsList) return; // Verificăm existența listei
-        // Restaurăm ordinea inițială a recenziilor la redimensionare
-        reviewsList.innerHTML = ""; // Ștergem conținutul existent
-        initialReviewsOrder.forEach(function(item) {
-            reviewsList.appendChild(item); // Re-adăugăm elementele în ordinea inițială
-        });
-    });
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["cmeiT","644VZ"], "644VZ", "parcelRequire9685")
+},{"./js/carousel.js":"2DotB"}]},["cmeiT","644VZ"], "644VZ", "parcelRequire9685")
 
 </script>
 

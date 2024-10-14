@@ -1,9 +1,10 @@
 .popup {
-  position: fixed; /* Fix pentru a face popup-ul să fie static pe ecran */
+  position: fixed;
   top: 0;
-  width: 100vw; /* Lățime completă */
-  height: 100vh; /* Înălțime completă */
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(225, 121, 146, 1);
+  z-index: 10;
 }
 
 .is-hidden {
