@@ -115,7 +115,7 @@
 92C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\svgo\plugins\sortDefsChildren.js133731910054869097 0
 98C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\css-select\node_modules\domhandler\lib133731910048469621 1
 135C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\atrule\font-face.js133731910052494791 0
-56C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\README.md133731908542320516 0
+56C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\README.md133733665843304250 0
 94C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\src\images\testimonials\testimonials-2-d-2x.jpg133690836011726824 0
 95C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\fs-extra\lib\ensure\symlink-type.js133731939045336238 0
 127C:\Users\Hp\OneDrive\Documents\GitHub\IceCream\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\convertor\index.js133731910053302004 0
